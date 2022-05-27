@@ -134,7 +134,7 @@ public class GUI {
         lore.add(Utils.chatColor("&7Use &6/wild &7to enter the wilderness."));
         lore.add("");
         lore.add(Utils.chatColor("&fRewards:"));
-        lore.add(Utils.chatColor("&7- $500"));
+        lore.add(Utils.chatColor("&7- 25 Claim Blocks"));
         meta.setLore(lore);
         item.setItemMeta(meta);
         inv.setItem(11, item);
@@ -147,7 +147,7 @@ public class GUI {
         lore.add(Utils.chatColor("&7Example: &6/sethome base&7."));
         lore.add("");
         lore.add(Utils.chatColor("&fRewards:"));
-        lore.add(Utils.chatColor("&7- $500"));
+        lore.add(Utils.chatColor("&7- 1x Builder Crate Key"));
         meta.setLore(lore);
         item.setItemMeta(meta);
         inv.setItem(12, item);
@@ -160,7 +160,7 @@ public class GUI {
         lore.add(Utils.chatColor("&6shovel&7, or with &6/claim&7."));
         lore.add("");
         lore.add(Utils.chatColor("&fRewards:"));
-        lore.add(Utils.chatColor("&7- $500"));
+        lore.add(Utils.chatColor("&7- 1 Golden Apple"));
         meta.setLore(lore);
         item.setItemMeta(meta);
         inv.setItem(13, item);
@@ -172,7 +172,7 @@ public class GUI {
         lore.add(Utils.chatColor("&7View the PlayerWarps with &6/pwarp&7."));
         lore.add("");
         lore.add(Utils.chatColor("&fRewards:"));
-        lore.add(Utils.chatColor("&7- $500"));
+        lore.add(Utils.chatColor("&7- $1,000"));
         meta.setLore(lore);
         item.setItemMeta(meta);
         inv.setItem(14, item);
@@ -184,7 +184,7 @@ public class GUI {
         lore.add(Utils.chatColor("&7Visit &6/warp resource&7."));
         lore.add("");
         lore.add(Utils.chatColor("&fRewards:"));
-        lore.add(Utils.chatColor("&7- $500"));
+        lore.add(Utils.chatColor("&7- 50 Claim Blocks"));
         meta.setLore(lore);
         item.setItemMeta(meta);
         inv.setItem(15, item);
@@ -196,7 +196,7 @@ public class GUI {
         lore.add(Utils.chatColor("&7Visit &6/warp crates&7."));
         lore.add("");
         lore.add(Utils.chatColor("&fRewards:"));
-        lore.add(Utils.chatColor("&7- $500"));
+        lore.add(Utils.chatColor("&7- 1x Engineer Crate Key"));
         meta.setLore(lore);
         item.setItemMeta(meta);
         inv.setItem(16, item);
@@ -208,7 +208,7 @@ public class GUI {
         lore.add(Utils.chatColor("&7Use &6/store&7."));
         lore.add("");
         lore.add(Utils.chatColor("&fRewards:"));
-        lore.add(Utils.chatColor("&7- $500"));
+        lore.add(Utils.chatColor("&7- 1x Farmer Crate Key"));
         meta.setLore(lore);
         item.setItemMeta(meta);
         inv.setItem(19, item);
@@ -221,7 +221,7 @@ public class GUI {
         lore.add(Utils.chatColor("&7See the vote menu with &6/vote&7."));
         lore.add("");
         lore.add(Utils.chatColor("&fRewards:"));
-        lore.add(Utils.chatColor("&7- $500"));
+        lore.add(Utils.chatColor("&7- 1x Beta Crate Key"));
         meta.setLore(lore);
         item.setItemMeta(meta);
         inv.setItem(20, item);
@@ -237,7 +237,7 @@ public class GUI {
         lore.add(Utils.chatColor("&7need help!"));
         lore.add("");
         lore.add(Utils.chatColor("&fRewards:"));
-        lore.add(Utils.chatColor("&7- $500"));
+        lore.add(Utils.chatColor("&7- Coal rank for one week"));
         meta.setLore(lore);
         item.setItemMeta(meta);
         inv.setItem(21, item);
