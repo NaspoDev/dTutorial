@@ -1,0 +1,14 @@
+#dTutorial gives new players the ability to use /tutorial which opens a quest style GUI with mini-objectives for them
+#to complete and learn about the server.
+#A boss-bar is also present at the top of their screen until they complete the quest, or until the next day. (After
+#server restart).
+
+#Messages
+messages:
+  prefix: "&8[&a&lTutorial&8] &r"
+  reload-config: "&7Configuration reloaded."
+  reload-all: "&7All files have been reloaded."
+  bad-reload-usage: "&cUsage: &6/tutorial reload &8<&6config&8|&6all&8>"
+  no-permission: "&cYou do not have permission."
+  not-eligible: "&cYou are not eligible for the tutorial."
+  tutorial-was-skipped: "&7The tutorial was skipped."

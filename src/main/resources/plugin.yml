@@ -1,0 +1,15 @@
+name: dTutorial
+version: '${project.version}'
+main: me.naspo.dtutorial.DTutorial
+api-version: 1.18
+authors: [ Naspo ]
+description: A tutorial for new DeltaRealms players.
+
+depend:
+  - Essentials
+  - GriefPrevention
+  - CrazyCrates
+  - LuckPerms
+
+commands:
+  tutorial:
