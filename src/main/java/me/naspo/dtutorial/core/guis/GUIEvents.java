@@ -24,8 +24,7 @@ public class GUIEvents implements Listener {
     //Denying click event for main gui, and checking for skip tutorial input.
     @EventHandler
     private void onClickMainGUI(InventoryClickEvent event) {
-        if (event.getInventory().equals(
-                Tutorial.tutorial.get(event.getWhoClicked().getUniqueId()).getGUI().getInv())) {
+        if (event.getView().getTitle().contains("Tutorial Menu")) {
             event.setCancelled(true);
 
             if (event.getCurrentItem() != null) {
