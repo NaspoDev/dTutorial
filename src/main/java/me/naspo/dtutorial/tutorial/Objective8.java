@@ -14,7 +14,7 @@ public class Objective8 extends Objective {
     public Objective8(UUID uuid, GUI gui) {
         super(uuid, gui);
 
-        name = "Use /store";
+        name = "/warp crates";
         completed = false;
     }
 

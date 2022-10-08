@@ -28,6 +28,8 @@ public final class DTutorial extends JavaPlugin {
     @Override
     public void onEnable() {
         this.saveDefaultConfig();
+        this.getConfig().options().copyDefaults(true);
+        this.saveConfig();
 
         dependencyCheck();
 

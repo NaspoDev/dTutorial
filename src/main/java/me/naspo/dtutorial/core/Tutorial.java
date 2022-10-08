@@ -10,6 +10,7 @@ import org.bukkit.event.player.PlayerJoinEvent;
 import java.util.HashMap;
 import java.util.UUID;
 
+//Manages the tutorial hashmap.
 public class Tutorial implements Listener {
     public static HashMap<UUID, PlayerStats> tutorial; //Stores new players eligible for the tutorial.
 

@@ -14,7 +14,7 @@ public class Objective6 extends Objective {
     public Objective6(UUID uuid, GUI gui) {
         super(uuid, gui);
 
-        name = "/warp resource";
+        name = "/warp town";
         completed = false;
     }
 
