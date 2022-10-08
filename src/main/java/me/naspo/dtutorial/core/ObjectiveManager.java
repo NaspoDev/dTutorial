@@ -155,7 +155,7 @@ public class ObjectiveManager implements Listener {
     //Objective 8 completion check.
     @EventHandler
     private void objectiveEight(UserWarpEvent event) {
-        if (event.getWarp().equalsIgnoreCase("town")) {
+        if (event.getWarp().equalsIgnoreCase("crates")) {
             if (Tutorial.tutorial.containsKey(event.getUser().getUUID())) {
                 if (!(Tutorial.tutorial.get(event.getUser().getUUID()).getObjective(7).isCompleted())) {
                     if (!(Tutorial.tutorial.get(event.getUser().getUUID()).getObjective(6).isCompleted())) {
