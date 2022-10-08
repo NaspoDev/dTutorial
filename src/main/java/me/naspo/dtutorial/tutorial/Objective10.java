@@ -18,7 +18,7 @@ public class Objective10 extends Objective {
         super(uuid, gui);
         this.plugin = plugin;
 
-        name = "Use /help";
+        name = "Use /vote";
         completed = false;
     }
 

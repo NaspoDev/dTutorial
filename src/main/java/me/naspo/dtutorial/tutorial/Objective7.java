@@ -14,7 +14,7 @@ public class Objective7 extends Objective {
     public Objective7(UUID uuid, GUI gui) {
         super(uuid, gui);
 
-        name = "/warp crates";
+        name = "/warp resource";
         completed = false;
     }
 

@@ -49,7 +49,7 @@ public class DataFiles {
     public void saveData() {
         for (Map.Entry<UUID, PlayerStats> entry : Tutorial.tutorial.entrySet()) {
 
-            //Initialize and create the file if it doesnt exist.
+            //Initialize and create the file if it doesn't exist.
             playerFile = new File(dir, entry.getKey() + ".yml");
             if (!(playerFile.exists())) {
                 try {

@@ -181,7 +181,7 @@ public class GUI {
     private void setObjectiveSixConstants() {
         lore.add("");
         lore.add(Utils.chatColor("&fDetails:"));
-        lore.add(Utils.chatColor("&7Visit &6/warp resource&7."));
+        lore.add(Utils.chatColor("&7Visit &6/warp town&7."));
         lore.add("");
         lore.add(Utils.chatColor("&fRewards:"));
         lore.add(Utils.chatColor("&7- 50 Claim Blocks"));
@@ -193,7 +193,7 @@ public class GUI {
     private void setObjectiveSevenConstants() {
         lore.add("");
         lore.add(Utils.chatColor("&fDetails:"));
-        lore.add(Utils.chatColor("&7Visit &6/warp crates&7."));
+        lore.add(Utils.chatColor("&7Visit &6/warp resource&7."));
         lore.add("");
         lore.add(Utils.chatColor("&fRewards:"));
         lore.add(Utils.chatColor("&7- 1x Engineer Crate Key"));
@@ -205,7 +205,7 @@ public class GUI {
     private void setObjectiveEightConstants() {
         lore.add("");
         lore.add(Utils.chatColor("&fDetails:"));
-        lore.add(Utils.chatColor("&7Use &6/store&7."));
+        lore.add(Utils.chatColor("&7Visit &6/warp crates&7."));
         lore.add("");
         lore.add(Utils.chatColor("&fRewards:"));
         lore.add(Utils.chatColor("&7- 1x Farmer Crate Key"));
@@ -217,8 +217,7 @@ public class GUI {
     private void setObjectiveNineConstants() {
         lore.add("");
         lore.add(Utils.chatColor("&fDetails:"));
-        lore.add(Utils.chatColor("&7Voting gives you awesome rewards!"));
-        lore.add(Utils.chatColor("&7See the vote menu with &6/vote&7."));
+        lore.add(Utils.chatColor("&7Use &6/store&7."));
         lore.add("");
         lore.add(Utils.chatColor("&fRewards:"));
         lore.add(Utils.chatColor("&7- 1x Beta Crate Key"));
@@ -230,11 +229,8 @@ public class GUI {
     private void setObjectiveTenConstants() {
         lore.add("");
         lore.add(Utils.chatColor("&fDetails:"));
-        lore.add(Utils.chatColor("&7Use &6/help &7to access the help menu."));
-        lore.add("");
-        lore.add(Utils.chatColor("&7The help menu contains important server"));
-        lore.add(Utils.chatColor("&7information. Reference it whenever you"));
-        lore.add(Utils.chatColor("&7need help!"));
+        lore.add(Utils.chatColor("&7Voting gives you awesome rewards!"));
+        lore.add(Utils.chatColor("&7See the vote menu with &6/vote&7."));
         lore.add("");
         lore.add(Utils.chatColor("&fRewards:"));
         lore.add(Utils.chatColor("&7- Coal rank for one week"));

@@ -1,5 +1,6 @@
 package me.naspo.dtutorial.tutorial;
 
+import me.naspo.dtutorial.DTutorial;
 import me.naspo.dtutorial.Utils;
 import me.naspo.dtutorial.core.guis.GUI;
 import me.naspo.dtutorial.core.Tutorial;
@@ -14,7 +15,7 @@ public class Objective9 extends Objective {
     public Objective9(UUID uuid, GUI gui) {
         super(uuid, gui);
 
-        name = "Use /vote";
+        name = "Use /store";
         completed = false;
     }
 

@@ -26,11 +26,13 @@ public class ObjectiveManager implements Listener {
         if (Tutorial.tutorial.containsKey(player.getUniqueId())) {
             String label = event.getMessage();
 
+            //Objective 1 - Explore spawn.
             if (label.equalsIgnoreCase("/achievements")) {
                 objectiveOne(player);
                 return;
             }
 
+            //Objective 2 - Use /wild.
             if (label.equalsIgnoreCase("/wild") || label.equalsIgnoreCase("/rtp")) {
                 objectiveTwo(player);
                 return;
@@ -50,20 +52,14 @@ public class ObjectiveManager implements Listener {
                 return;
             }
 
-            //Objective 8 - Use /store.
+            //Objective 9 - Use /store.
             if (label.equalsIgnoreCase("/store")) {
-                objectiveEight(player);
-                return;
-            }
-
-            //Objective 9 - Voting gives you awesome rewards! See the vote menu with /vote.
-            if (label.equalsIgnoreCase("/vote")) {
                 objectiveNine(player);
                 return;
             }
 
-            //Objective 10 - Use /help to access the help menu.
-            if (label.equalsIgnoreCase("/help")) {
+            //Objective 10 - Voting gives you awesome rewards! See the vote menu with /vote.
+            if (label.equalsIgnoreCase("/vote")) {
                 objectiveTen(player);
             }
         }
@@ -123,11 +119,11 @@ public class ObjectiveManager implements Listener {
         }
     }
 
-    //Objective 6 - Visit /warp resource.
+    //Objective 6 - Visit /warp town.
     //Objective 6 completion check.
     @EventHandler
     private void objectiveSix(UserWarpEvent event) {
-        if (event.getWarp().equalsIgnoreCase("resource")) {
+        if (event.getWarp().equalsIgnoreCase("town")) {
             if (Tutorial.tutorial.containsKey(event.getUser().getUUID())) {
                 if (!(Tutorial.tutorial.get(event.getUser().getUUID()).getObjective(5).isCompleted())) {
                     if (!(Tutorial.tutorial.get(event.getUser().getUUID()).getObjective(4).isCompleted())) {
@@ -139,11 +135,11 @@ public class ObjectiveManager implements Listener {
         }
     }
 
-    //Objective 7 - Visit /warp crates.
+    //Objective 7 - Visit /warp resource.
     //Objective 7 completion check.
     @EventHandler
     private void objectiveSeven(UserWarpEvent event) {
-        if (event.getWarp().equalsIgnoreCase("crates")) {
+        if (event.getWarp().equalsIgnoreCase("resource")) {
             if (Tutorial.tutorial.containsKey(event.getUser().getUUID())) {
                 if (!(Tutorial.tutorial.get(event.getUser().getUUID()).getObjective(6).isCompleted())) {
                     if (!(Tutorial.tutorial.get(event.getUser().getUUID()).getObjective(5).isCompleted())) {
@@ -155,13 +151,19 @@ public class ObjectiveManager implements Listener {
         }
     }
 
+    //Objective 8 - Visit /warp crates.
     //Objective 8 completion check.
-    private void objectiveEight(Player player) {
-        if (!(Tutorial.tutorial.get(player.getUniqueId()).getObjective(7).isCompleted())) {
-            if (!(Tutorial.tutorial.get(player.getUniqueId()).getObjective(6).isCompleted())) {
-                return;
+    @EventHandler
+    private void objectiveEight(UserWarpEvent event) {
+        if (event.getWarp().equalsIgnoreCase("crates")) {
+            if (Tutorial.tutorial.containsKey(event.getUser().getUUID())) {
+                if (!(Tutorial.tutorial.get(event.getUser().getUUID()).getObjective(7).isCompleted())) {
+                    if (!(Tutorial.tutorial.get(event.getUser().getUUID()).getObjective(6).isCompleted())) {
+                        return;
+                    }
+                    Tutorial.tutorial.get(event.getUser().getUUID()).getObjective(7).setCompleted();
+                }
             }
-            Tutorial.tutorial.get(player.getUniqueId()).getObjective(7).setCompleted();
         }
     }
 
