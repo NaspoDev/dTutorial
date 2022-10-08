@@ -57,7 +57,7 @@ public class Objective10 extends Objective {
                 player.getName() + " parent addtemp coal 7d");
 
         player.sendMessage(Utils.chatColor(Utils.prefix + "&7You completed the tutorial! " +
-                "Have fun!"));
+                "If you ever need help, use &6/help&7. Have fun!"));
 
         Tutorial.tutorial.get(player.getUniqueId()).setCompletedOrSkipped(true);
     }
