@@ -89,7 +89,7 @@ public final class DTutorial extends JavaPlugin {
         tutorial = new Tutorial(this, dataFiles);
         commands = new Commands(this, dataFiles);
         tabCompleter = new TabCompleter();
-        objectiveManager = new ObjectiveManager();
+        objectiveManager = new ObjectiveManager(this);
 
         gui = new GUI();
         skipTutorialConfirmationGUI = new SkipTutorialConfirmationGUI();

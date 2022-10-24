@@ -1,6 +1,7 @@
 package me.naspo.dtutorial.core;
 
 import com.earth2me.essentials.Essentials;
+import me.naspo.dtutorial.DTutorial;
 import me.ryanhamshire.GriefPrevention.events.ClaimCreatedEvent;
 import net.ess3.api.events.UserWarpEvent;
 import org.bukkit.Bukkit;
@@ -15,7 +16,9 @@ import java.util.UUID;
 public class ObjectiveManager implements Listener {
     private Essentials ess;
 
-    public ObjectiveManager() {
+    private DTutorial plugin;
+    public ObjectiveManager(DTutorial plugin) {
+        this.plugin = plugin;
         ess = (Essentials) Bukkit.getPluginManager().getPlugin("Essentials");
     }
 
@@ -40,10 +43,13 @@ public class ObjectiveManager implements Listener {
 
             //Objective 3 - Set a home with /sethome.
             if (label.startsWith("/sethome")) {
-                if (ess.getUser(player).getHomes().size() >= 1) {
-                    objectiveThree(player);
-                    return;
-                }
+                Bukkit.getScheduler().runTaskLater(plugin, () -> {
+                    if (ess.getUser(player).getHomes().size() >= 1) {
+                        objectiveThree(player);
+                        return;
+                    }
+                }, 10);
+
             }
 
             //Objective 5 - View the PlayerWarps with /pwarp.
