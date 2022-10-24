@@ -38,7 +38,7 @@ public class Objective1 extends Objective {
         Tutorial.tutorial.get(uuid).bossBar.setProgress(0.1);
 
         player.playSound(player.getLocation(), Sound.ENTITY_EXPERIENCE_ORB_PICKUP, 0.5f, 1.0f);
-        player.sendTitle("&aObjective 1 Complete!", "", 1, 20, 1);
+        player.sendTitle("Objective 1 Complete!", "", 5, 30, 5);
         player.sendMessage(Utils.chatColor(Utils.prefix + "&7You just completed " +
                 "objective 1!"));
         player.sendMessage(Utils.chatColor("&7You were given &6$500&7."));

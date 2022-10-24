@@ -49,7 +49,7 @@ public class Objective10 extends Objective {
         }, 60L);
 
         player.playSound(player.getLocation(), Sound.ENTITY_PLAYER_LEVELUP, 0.5f, 1.0f);
-        player.sendTitle("Tutorial Objective Complete!", "", 1, 20, 1);
+        player.sendTitle("Objective 10 Complete!", "", 5, 30, 5);
         player.sendMessage(Utils.chatColor(Utils.prefix + "&7You just completed " +
                 "objective 10!"));
         player.sendMessage(Utils.chatColor("&7You were given &6Coal rank for one week&7."));
