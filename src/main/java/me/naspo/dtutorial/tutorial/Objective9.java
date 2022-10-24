@@ -39,7 +39,7 @@ public class Objective9 extends Objective {
         Tutorial.tutorial.get(uuid).bossBar.setProgress(0.9);
 
         player.playSound(player.getLocation(), Sound.ENTITY_EXPERIENCE_ORB_PICKUP, 0.5f, 1.0f);
-        player.sendTitle("Tutorial Objective Complete!", "", 1, 20, 1);
+        player.sendTitle("Objective 9 Complete!", "", 5, 30, 5);
         player.sendMessage(Utils.chatColor(Utils.prefix + "&7You just completed " +
                 "objective 9!"));
         player.sendMessage(Utils.chatColor("&7You were given &61x Beta Crate Key&7."));

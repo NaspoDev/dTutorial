@@ -38,7 +38,7 @@ public class Objective4 extends Objective {
         Tutorial.tutorial.get(uuid).bossBar.setProgress(0.4);
 
         player.playSound(player.getLocation(), Sound.ENTITY_EXPERIENCE_ORB_PICKUP, 0.5f, 1.0f);
-        player.sendTitle("Tutorial Objective Complete!", "", 1, 20, 1);
+        player.sendTitle("Objective 4 Complete!", "", 5, 30, 5);
         player.sendMessage(Utils.chatColor(Utils.prefix + "&7You just completed " +
                 "objective 4!"));
         player.sendMessage(Utils.chatColor("&7You were given &61 Golden Apple&7."));

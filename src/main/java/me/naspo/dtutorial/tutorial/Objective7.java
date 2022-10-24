@@ -38,7 +38,7 @@ public class Objective7 extends Objective {
         Tutorial.tutorial.get(uuid).bossBar.setProgress(0.7);
 
         Bukkit.getPlayerExact(player.getName()).playSound(player.getLocation(), Sound.ENTITY_EXPERIENCE_ORB_PICKUP, 0.5f, 1.0f);
-        Bukkit.getPlayerExact(player.getName()).sendTitle("Tutorial Objective Complete!", "", 1, 20, 1);
+        Bukkit.getPlayerExact(player.getName()).sendTitle("Objective 7 Complete!", "", 5, 30, 5);
         Bukkit.getPlayerExact(player.getName()).sendMessage(Utils.chatColor(Utils.prefix + "&7You just completed " +
                 "objective 7!"));
         Bukkit.getPlayerExact(player.getName()).sendMessage(Utils.chatColor("&7You were given &61x Engineer Crate Key&7."));
